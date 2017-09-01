@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>API Exporter - For Trustpilot</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script> -->
+  </head>
+  <body>
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br /><br />
+        <h1 class="header center orange-text">API Exporter for Trustpilot</h1>
+        <br /><br />
+      </div>
+    </div>
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="icon-block">
+              <h5 class="center">Schedule or run exports</h5>
+            </div>
+            <br /><br /><br /><br />
+            <button class="btn waves-effect waves-light" onclick="dataBridge.exportRun(event);" type="button">Export</button>
+          </div>
+          <div class="col s12 m6">
+            <div class="icon-block">
+              <h5 class="center">Exporter setup</h5>
+              <form class="col s12 center">
+                <div style="display:none;" class="col s12" id="inputTemplate">
+                  <span>Setting</span>:
+                  <div class="input-field inline">
+                    <input type="text" />
+                  </div>
+                </div>
+                <br /><br /><br /><br />
+                <button class="btn waves-effect waves-light" onclick="dataBridge.settingsSave(event);" type="button">Save</button>
+                <br />
+                <div id="inputLoader" style="display:none;" class="preloader-wrapper small active waves-input-wrapper">
+                  <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                  <div class="spinner-layer spinner-red">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div><div class="gap-patch">
+                      <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+
+                  <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div><div class="gap-patch">
+                      <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+
+                  <div class="spinner-layer spinner-green">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div><div class="gap-patch">
+                      <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/js/init.js"></script>
+  </body>
+</html>
