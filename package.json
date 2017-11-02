@@ -18,7 +18,6 @@
   ],
   "dependencies": {
     "fileunit": "git+https://github.com/Nexination/node-fileunit.git",
-    "multipart-light": "git+https://github.com/Nexination/node-multipart-light.git"
   },
   "bin": {
     "tp-export": "./server.js"
